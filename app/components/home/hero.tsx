@@ -26,7 +26,7 @@ export const Hero: React.FC = () => {
       {/* 1. BACKGROUND VIDEO */}
       <video
         src="/videos/hero.mov"
-         poster="/logo.png" // Added a poster image for loading
+       //  poster="/logo.png" // Added a poster image for loading
         autoPlay
         loop
         muted
