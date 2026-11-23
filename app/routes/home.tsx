@@ -1,13 +1,22 @@
 import type { Route } from "./+types/home";
 import { Welcome } from "../welcome/welcome";
+import { Header } from "~/components/common/header";
+import { Footer } from "~/components/common/footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "VBREEZE FANS" },
+    { name: "description", content: "Welcome to VBreeze Fans!" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <>
+      {" "}
+      <Header />
+      <Welcome />
+      <Footer />
+    </>
+  );
 }
